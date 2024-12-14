@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <!-- Input Field for Encryption -->
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter text to encrypt"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Encrypt Button -->
+    <Button
+        android:id="@+id/encryptBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Encrypted Text Display -->
+    <TextView
+        android:id="@+id/encryptTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:text="Encrypted data will appear here"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Input Field for Decryption -->
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter text to decrypt"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Decrypt Button -->
+    <Button
+        android:id="@+id/decryptBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Decrypted Text Display -->
+    <TextView
+        android:id="@+id/decryptTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:text="Decrypted data will appear here"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</LinearLayout>
